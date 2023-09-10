@@ -1,0 +1,163 @@
+
+    *{
+
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    .nav{
+
+        text-decoration: none;
+        text-align: center;
+        background: #3a6186;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding: 12px 0;
+
+    }
+
+    a{
+
+        text-decoration: none;
+
+
+    }
+
+    nav ul li{
+
+        display: inline-block;
+       
+    
+    }
+
+    nav ul li a{
+
+        font-size: 18px;
+        color: #fff;
+        padding: 15px 22px;
+        display: block;
+    
+        position: relative;
+        z-index: 1;
+      
+    
+    }
+
+    nav ul li a::before{
+
+
+        content: "";
+        width: 0%;
+        height: 100%;
+        background-color: #0a1118;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+        z-index: -1;
+       
+
+    }
+    nav ul li:hover a::before{
+
+        width: 50%;
+    }
+
+    nav ul li a::after{
+
+
+        content: "";
+        width: 0%;
+        height: 100%;
+        background-color: #0a1118;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: 0.5s;
+        z-index: -1;
+       
+
+    }
+
+    nav ul li:hover a::after{
+
+        width: 50%;
+    }
+
+    /* nav 2nd*/
+
+    .nav2{
+
+
+        background: #1a2a6c;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding: 10px;
+    text-align: center;
+    }
+
+  
+    .nav2 ul li{
+
+        display: inline-block;
+       
+    
+    }
+
+    .nav2 ul li a{
+
+        font-size: 18px;
+        color: #fff;
+        padding: 15px 22px;
+        display: block;
+    
+        position: relative;
+        z-index: 1;
+      
+    
+    }
+
+    .nav2 ul li a::before{
+
+
+        content: "";
+        width: 0%;
+        height: 4px;
+        background-color: #1e0331ef;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+        z-index: -1;
+       
+
+    }
+    .nav2 ul li:hover a::before{
+
+        width: 100%;
+    }
+
+    
+    .nav2 ul li a::after{
+
+
+        content: "";
+        width: 0%;
+        height: 4px;
+        background-color: #0a1118;
+        position: absolute;
+        top:50px;
+        right: 0;
+        transition: 0.5s;
+       
+       
+
+    }
+
+    .nav2 ul li:hover a::after{
+
+        width: 100%;
+    }
